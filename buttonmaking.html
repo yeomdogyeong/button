@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test_button {
+            width:250px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <input id="test_button" type="button" value="night" onclick=onclick() >
+
+    <h1>my name is yeom</h1>
+
+    <script>
+
+        var onclick = function () 
+        {
+            if(document.querySelector("#test_button").value==="night") {
+            document.querySelector("body").style.backgroundColor="black";
+            document.querySelector("body").style.color="white";
+            document.querySelector("#test_button").value="day";
+        }
+    
+
+        else {
+           
+            document.querySelector("body").style.backgroundColor="white";
+            document.querySelector("body").style.color="black";
+            document.querySelector("#test_button").value="night";
+        }
+    }
+    </script>
+</body>
+</html>
+
+<!-- 22 /var만 가능, const/let이 안됨 -->
+<!-- onclick이라는 변수를 지정해서 함수 지정 -->
